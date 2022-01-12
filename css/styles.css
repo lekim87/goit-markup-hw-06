@@ -1,27 +1,80 @@
-.pages {
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --white-color: #ffffff;
+  --accent-color: #2196f3;
+  --contact-color: rgba(255, 255, 255, 0.6);
+  --primary-background-color: #e5e5e5;
+  --secondary-background-color: #f5f4fa;
+  --third-background-color: #2f303a;
+}
+
+.page {
   background-color: #e5e5e5;
-  color: #212121;
+  color: var(--primary-text-color);
+}
+
+ul {
+  list-style: none;
 }
 
 .logo {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .accent {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .site-nav .link {
-  color: #2196f3;
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
 }
 
 .contact .link {
-  color: #757575;
+  color: var(--secondary-text-color);
 }
-/* main text color #212121 */
-/* secondary text color #757575 */
-/* white color #FFFFFF */
-/* accent color #2196F3 */
-/* contact color rgba(255, 255, 255, 0.6) */
-/*main background color #E5E5E5 */
-/*secondary background color #F5F4FA */
+
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--accent-color);
+}
+
+.hero-title {
+  color: var(--primary-text-color);
+}
+
+.section-title,
+.name {
+  color: var(--primary-text-color);
+}
+
+.section-text {
+  color: var(--secondary-text-color);
+}
+
+.button {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-background-color);
+}
+
+.button.primary {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.basement {
+  background-color: var(--third-background-color);
+}
+
+.geo {
+  color: var(--white-color);
+}
