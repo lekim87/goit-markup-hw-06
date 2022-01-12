@@ -11,6 +11,13 @@
   color: #212121;
 }
 
+.site-nav .link {
+  color: #2196f3;
+}
+
+.contact .link {
+  color: #757575;
+}
 /* main text color #212121 */
 /* secondary text color #757575 */
 /* white color #FFFFFF */
