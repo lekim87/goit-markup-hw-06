@@ -12,22 +12,44 @@
 .page {
   background-color: #e5e5e5;
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 ul {
   list-style: none;
+  text-decoration: none;
+}
+
+.page-header {
+  background-color: var(--white-color);
 }
 
 .logo {
   color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .accent {
   color: var(--primary-text-color);
+  font-family: Raleway, sans-serif;
+}
+
+.emphasis {
+  color: var(--white-color);
+  font-family: Raleway, sans-serif;
 }
 
 .site-nav .link {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -41,6 +63,10 @@ ul {
 
 .contact .link {
   color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .contact .link:hover,
@@ -48,8 +74,25 @@ ul {
   color: var(--accent-color);
 }
 
+.basement-link {
+  color: var(--contact-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.hero {
+  background-color: var(--third-background-color);
+  text-align: center;
+}
+
 .hero-title {
-  color: var(--primary-text-color);
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
 }
 
 .section-title,
@@ -57,8 +100,41 @@ ul {
   color: var(--primary-text-color);
 }
 
+.section-title-advertising {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.section-title-center {
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.name {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
 .section-text {
   color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.section-text-advertising {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.41;
 }
 
 .button {
@@ -66,9 +142,26 @@ ul {
   background-color: var(--secondary-background-color);
 }
 
+.button:hover,
+.button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
 .button.primary {
   color: var(--white-color);
   background-color: var(--accent-color);
+}
+
+.hero-button.primary {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .basement {
@@ -77,4 +170,21 @@ ul {
 
 .geo {
   color: var(--white-color);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
