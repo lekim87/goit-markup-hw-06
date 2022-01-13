@@ -21,6 +21,8 @@ ul {
   text-decoration: none;
 }
 
+/*---header---*/
+
 .page-header {
   background-color: var(--white-color);
 }
@@ -32,16 +34,19 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .accent {
   color: var(--primary-text-color);
   font-family: Raleway, sans-serif;
+  text-decoration: none;
 }
 
 .emphasis {
   color: var(--white-color);
   font-family: Raleway, sans-serif;
+  text-decoration: none;
 }
 
 .site-nav .link {
@@ -50,6 +55,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -67,6 +73,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .contact .link:hover,
@@ -76,11 +83,20 @@ ul {
 
 .basement-link {
   color: var(--contact-color);
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
+
+.basement-link:hover,
+.basement-link:focus {
+  color: var(--accent-color);
+}
+
+/*---main---*/
 
 .hero {
   background-color: var(--third-background-color);
@@ -95,9 +111,12 @@ ul {
   letter-spacing: 0.06em;
 }
 
-.section-title,
-.name {
+.section-title {
   color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .section-title-advertising {
@@ -109,7 +128,6 @@ ul {
 
 .section-title-center {
   color: var(--primary-text-color);
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -140,6 +158,10 @@ ul {
 .button {
   color: var(--primary-text-color);
   background-color: var(--secondary-background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
 }
 
 .button:hover,
@@ -150,7 +172,11 @@ ul {
 
 .button.primary {
   color: var(--white-color);
+  font-family: inherit;
   background-color: var(--accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
 }
 
 .hero-button.primary {
@@ -164,18 +190,6 @@ ul {
   letter-spacing: 0.06em;
 }
 
-.basement {
-  background-color: var(--third-background-color);
-}
-
-.geo {
-  color: var(--white-color);
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -187,4 +201,24 @@ ul {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+/*---footer---*/
+
+.basement {
+  background-color: var(--third-background-color);
+}
+
+.geo {
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+.geo:hover,
+.geo:focus {
+  color: var(--accent-color);
 }
