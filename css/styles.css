@@ -9,8 +9,14 @@
   --third-background-color: #2f303a;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .page {
-  background-color: #e5e5e5;
+  background-color: #ffffff;
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -76,6 +82,11 @@ ul {
   text-decoration: none;
 }
 
+.contact list {
+  margin: 0;
+  padding: 0;
+}
+
 .contact .link:hover,
 .contact .link:focus {
   color: var(--accent-color);
@@ -96,6 +107,14 @@ ul {
   color: var(--accent-color);
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 /*---main---*/
 
 .hero {
@@ -109,6 +128,13 @@ ul {
   font-size: 44px;
   line-height: 1.5;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 696px;
 }
 
 .section-title {
@@ -162,6 +188,11 @@ ul {
   font-size: 16px;
   line-height: 1.62;
   cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  border: 0px solid transparent;
+  padding: 6px 22px;
 }
 
 .button:hover,
@@ -178,11 +209,14 @@ ul {
   font-size: 16px;
   line-height: 1.62;
   cursor: pointer;
+  padding: 6px 22px;
+  width: 73px;
 }
 
 .hero-button.primary {
   color: var(--white-color);
   background-color: var(--accent-color);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -190,6 +224,11 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 10px 32px;
+  width: 200px;
+  border: 0px solid transparent;
 }
 
 .visually-hidden {
