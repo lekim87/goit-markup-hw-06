@@ -15,6 +15,21 @@
   box-sizing: border-box;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  margin-bottom: 94px;
+}
+
 .page {
   background-color: #ffffff;
   color: var(--primary-text-color);
@@ -82,7 +97,7 @@ ul {
   text-decoration: none;
 }
 
-.contact list {
+.contact .list {
   margin: 0;
   padding: 0;
 }
@@ -113,6 +128,7 @@ ul {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
+  outline: 2px solid tomato;
 }
 
 /*---main---*/
@@ -150,6 +166,14 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  width: 270px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.section-advertising {
+  margin-top: 0;
+  padding-left: 0;
 }
 
 .section-title-center {
@@ -158,20 +182,122 @@ ul {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  width: 376px;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
-.name {
+.section-title-center-team {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  width: 264px;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.section-img {
+  margin: 0;
+  padding: 0;
+}
+
+.section-team {
+  margin: 0;
+  padding: 0;
+}
+
+.team {
+  width: 270px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 94px;
+}
+
+.img-igor,
+.img-olga,
+.img-niki,
+.img-mike {
+  margin-bottom: 30px;
+}
+
+.name-igor {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
+  width: 151px;
+  margin: 0px 59px 10px 60px;
 }
 
-.section-text {
+.section-text-igor {
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+  width: 130px;
+  margin: 0px 70px 30px 70px;
+}
+
+.name-olga {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  width: 109px;
+  margin: 0px 80px 10px 81px;
+}
+
+.section-text-olga {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  width: 147px;
+  margin: 0px 61px 30px 62px;
+}
+
+.name-niki {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  width: 137px;
+  margin: 0px 66px 10px 67px;
+}
+
+.section-text-niki {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  width: 76px;
+  margin: 0px 97px 30px 97px;
+}
+
+.name-mike {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  width: 134px;
+  margin: 0px 68px 10px 68px;
+}
+
+.section-text-mike {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  width: 87px;
+  margin: 0px 91px 30px 92px;
 }
 
 .section-text-advertising {
@@ -179,6 +305,9 @@ ul {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.41;
+  width: 270px;
+  margin-top: 0;
+  margin-bottom: 94px;
 }
 
 .button {
@@ -246,6 +375,18 @@ ul {
 
 /*---footer---*/
 
+.logo-footer {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  width: 145px;
+  margin: 60px 0px 20px 0px;
+}
+
 .basement {
   background-color: var(--third-background-color);
 }
@@ -257,9 +398,27 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+  width: 231px;
+  margin: 0px 0px 9px 0px;
 }
 
 .geo:hover,
 .geo:focus {
   color: var(--accent-color);
+}
+
+.contact,
+.list-basement {
+  margin: 0;
+  padding: 0;
+}
+
+.basement-link,
+.mail {
+  margin-bottom: 9px;
+}
+
+.basement-link,
+.phone {
+  margin-bottom: 60px;
 }
