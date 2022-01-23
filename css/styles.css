@@ -27,7 +27,8 @@ h6 {
 
 img {
   display: block;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
+  /* padding-bottom: 94px; */
 }
 
 .page {
@@ -48,6 +49,11 @@ ul {
   background-color: var(--white-color);
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -56,6 +62,8 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  width: 145px;
+  margin: 24px 93px 25px 0px;
 }
 
 .accent {
@@ -70,13 +78,17 @@ ul {
   text-decoration: none;
 }
 
-.site-nav .link {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
+.site-nav {
+  display: flex;
+}
+
+.site-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
 }
 
 .site-nav .link:hover,
@@ -88,6 +100,26 @@ ul {
   color: var(--accent-color);
 }
 
+.site-nav,
+.link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  /*margin-top: 32px;*/
+  /*margin-right: 50px;*/
+  /*margin-bottom: 32px;*/
+  padding: 0px;
+}
+
+.item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  /*display: block;*/
+}
+
 .contact .link {
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -97,28 +129,20 @@ ul {
   text-decoration: none;
 }
 
-.contact .list {
-  margin: 0;
-  padding: 0;
+.contact-list {
+  padding: 0px 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  display: flex;
+}
+
+.contact-list .item + .item {
+  margin-left: 50px;
 }
 
 .contact .link:hover,
 .contact .link:focus {
-  color: var(--accent-color);
-}
-
-.basement-link {
-  color: var(--contact-color);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-
-.basement-link:hover,
-.basement-link:focus {
   color: var(--accent-color);
 }
 
@@ -146,10 +170,11 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 200px;
   width: 696px;
 }
 
@@ -176,15 +201,20 @@ ul {
   padding-left: 0;
 }
 
-.section-title-center {
+.section-title-center,
+.centered {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  width: 376px;
+  /*--width: 376px;--*/
   margin-top: 0;
   margin-bottom: 50px;
+}
+
+.img {
+  padding-bottom: 94px;
 }
 
 .section-title-center-team {
@@ -193,9 +223,10 @@ ul {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  width: 264px;
-  margin-top: 94px;
+  /*-- width: 264px;--*/
+  /*--margin-top: 94px;--*/
   margin-bottom: 50px;
+  padding-top: 94px;
 }
 
 .section-img {
@@ -205,7 +236,7 @@ ul {
 
 .section-team {
   margin: 0;
-  padding: 0;
+  padding: 0px 0px 94px 0px;
 }
 
 .team {
@@ -214,7 +245,6 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 94px;
 }
 
 .img-igor,
@@ -230,8 +260,8 @@ ul {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  width: 151px;
-  margin: 0px 59px 10px 60px;
+  /*--width: 151px;--*/
+  margin: 0px 0px 10px 0px;
 }
 
 .section-text-igor {
@@ -239,8 +269,10 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-  width: 130px;
-  margin: 0px 70px 30px 70px;
+  /*--width: 130px;--*/
+  /* margin: 0px 0px 0px 0px; */
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 .name-olga {
@@ -249,8 +281,8 @@ ul {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  width: 109px;
-  margin: 0px 80px 10px 81px;
+  /*--width: 109px;--*/
+  margin: 0px 0px 10px 0px;
 }
 
 .section-text-olga {
@@ -259,7 +291,8 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   width: 147px;
-  margin: 0px 61px 30px 62px;
+  margin: 0px 61px 00px 62px;
+  padding-bottom: 30px;
 }
 
 .name-niki {
@@ -268,8 +301,8 @@ ul {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  width: 137px;
-  margin: 0px 66px 10px 67px;
+  /*-- width: 137px;--*/
+  margin: 0px 0px 10px 0px;
 }
 
 .section-text-niki {
@@ -278,7 +311,8 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   width: 76px;
-  margin: 0px 97px 30px 97px;
+  margin: 0px 97px 0px 97px;
+  padding-bottom: 30px;
 }
 
 .name-mike {
@@ -287,8 +321,8 @@ ul {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  width: 134px;
-  margin: 0px 68px 10px 68px;
+  /*--width: 134px;--*/
+  margin: 0px 0px 10px 0px;
 }
 
 .section-text-mike {
@@ -297,7 +331,8 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   width: 87px;
-  margin: 0px 91px 30px 92px;
+  margin: 0px 91px 0px 92px;
+  padding-bottom: 30px;
 }
 
 .section-text-advertising {
@@ -307,7 +342,8 @@ ul {
   line-height: 1.41;
   width: 270px;
   margin-top: 0;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
+  padding-bottom: 94px;
 }
 
 .button {
@@ -355,8 +391,10 @@ ul {
   cursor: pointer;
   text-transform: uppercase;
   border-radius: 4px;
-  padding: 10px 32px;
+  margin-bottom: 200px;
+  padding: 10px 0px;
   width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0px solid transparent;
 }
 
@@ -384,7 +422,7 @@ ul {
   letter-spacing: 0.03em;
   text-decoration: none;
   width: 145px;
-  margin: 60px 0px 20px 0px;
+  margin: 60px 0px 20px;
 }
 
 .basement {
@@ -399,7 +437,7 @@ ul {
   line-height: 1.71;
   text-decoration: none;
   width: 231px;
-  margin: 0px 0px 9px 0px;
+  margin: 20px 0px 9px 0px;
 }
 
 .geo:hover,
@@ -421,4 +459,29 @@ ul {
 .basement-link,
 .phone {
   margin-bottom: 60px;
+}
+
+.basement-link {
+  color: var(--contact-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.basement-link:hover,
+.basement-link:focus {
+  color: var(--accent-color);
+}
+
+/* .container-footer {
+  width: 1170px;
+  padding: 60px 15px;
+} */
+
+.emphasis {
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
