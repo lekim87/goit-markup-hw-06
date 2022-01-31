@@ -63,7 +63,6 @@ padding-bottom: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-
   margin-right: 93px;
 }
 
@@ -143,7 +142,6 @@ padding-bottom: 24px;
 .header-contact {
   fill: currentColor;
   margin-right: 10px;
-
 }
 
 .header-contact:hover, 
@@ -151,17 +149,6 @@ padding-bottom: 24px;
   fill: var(--accent-color);
 }
 
-
-/*.link .icon:hover, 
-.link .icon:focus {
-  fill: var(--accent-color);
-}*/
-
-
-/*.item:hover,
-.item:focus {
-  color: var(--accent-color);
-}*/
 
 .link .icon {
   display: flex;
@@ -181,7 +168,6 @@ padding-bottom: 24px;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
@@ -213,7 +199,6 @@ padding-bottom: 24px;
   background: #F5F4FA;
 border-radius: 4px;
 margin-bottom: 30px;
-
 display: flex;
 align-items: center;
 justify-content: center;
@@ -269,35 +254,6 @@ justify-content: center;
   height: 20px;
   fill: #AFB1B8;
 }
-
-/*.social-links {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-}
-
-.social-links-item {
-  display: flex;
-  justify-content: center;
-}
-
-.links {
-  display: block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-
-justify-content: center;
-}
-
-.social-links-icon {
-  width: 20px;
-  height: 20px;
-fill: currentColor;
-align-items: center;
-align-content: center;
-justify-content: center;
-}*/
 
 .links:hover,
 .links:focus {
@@ -638,7 +594,6 @@ margin: 0;
   margin-left: 8px;
 }
 
-
 .style {
   margin-top: 0;
   margin-bottom: 50px;
@@ -753,7 +708,6 @@ color: #FFFFFF;
   justify-content: center;
   align-items: center;
   align-content: center;
-
   min-width: 206px;
   margin-left: 70px;
   margin-top: 12px;
@@ -769,16 +723,21 @@ color: #FFFFFF;
 
 .footer-social-links {
   display: flex;
+  justify-content: center;
   padding: 0;
   margin: 0;
 }
 
 .footer-social-links-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
 }
 
 .reference {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
@@ -802,3 +761,4 @@ color: #FFFFFF;
 .footer-social-links-item+.footer-social-links-item {
   margin-left: 10px;
 }
+
