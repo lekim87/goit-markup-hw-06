@@ -96,7 +96,7 @@ padding-bottom: 24px;
 
 .site-nav,
 .link {
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -152,16 +152,16 @@ padding-bottom: 24px;
 
 .link .icon {
   display: flex;
-  justify-content: center;
-  align-items: center
+  /*justify-content: center;*/
+  align-items: center;
 }
 
 
 /*---main---*/
 
 .hero {
-  background-image: url('../images/hero.jpg');
-  background-repeat: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), no-repeat;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero.jpg');
+  /*background-repeat: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), no-repeat ;*/
   background-position: center;
   background-size: auto;
   background-color: var(--third-background-color);
@@ -204,10 +204,10 @@ align-items: center;
 justify-content: center;
 }
 
-.package:hover,
+/*.package:hover,
 .package:focus {
   border: 2px solid var(--accent-color);
-}
+}*/
 
 .section-two {
   padding-top: 94px;
@@ -261,7 +261,7 @@ justify-content: center;
 }
 
 .links:hover .social-links-icon,
-.link:focus .social-links-icon {
+.links:focus .social-links-icon {
   fill: #ffffff;
 }
 
@@ -291,29 +291,37 @@ justify-content: center;
 .client-lists-item {
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  /*border: 1px solid #AFB1B8;*/
 box-sizing: border-box;
 border-radius: 4px;
   justify-content: center;
   align-items: center;
-  padding: 16px 32px;
+  /*padding: 16px 32px;*/
 }
 
 .client-lists-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #AFB1B8;
+  width: 100%;
+  height: 100%;
 }
 
-.client-lists-item .client:hover,
-.client-lists-item .client:focus {
+.client-lists-link:hover .client,
+.client-lists-link:focus .client {
   fill: var(--accent-color);
-  border-color: 4px solid var(--accent-color);
 }
 
-.client-lists-item:hover,
-.client-lists-item:focus {
+.client-lists-link:hover,
+.client-lists-link:focus {
   border: 2px solid var(--accent-color);
+}
+
+.client:hover,
+.client:focus {
+  fill: var(--accent-color);
+  border: none;
 }
 
 .client {
@@ -360,9 +368,13 @@ margin-bottom: 0;
   border-left: 1px solid #EEEEEE;
   
 }
+.proffer {
+  display: block;
+  text-decoration: none;
+}
 
-.offers:hover {
-  border: 1px solid var(--accent-color);
+.proffer:hover,
+.proffer:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -551,7 +563,7 @@ margin: 0;
 .button:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
-  border: 2px solid var(--accent-color)
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button.primary {
@@ -690,16 +702,17 @@ margin-bottom: 9px;
 
 .find {
   display: flex;
+  align-items: baseline;
   justify-content: flex-start;
 }
 
 .join {
-  Font: Roboto;
-Weight: 700;
-Style: normal;
-Size: 14px;
-Line height: 1,17;
-Letter: 3%;
+  font: Roboto;
+weight: 700;
+style: normal;
+size: 14px;
+line height: 1,17;
+letter: 3%;
 color: #FFFFFF;
 }
 
