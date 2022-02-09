@@ -1012,3 +1012,7 @@ color: #FFFFFF;
   pointer-events: none;
   visibility: hidden;
 }
+
+textarea {
+  resize: none;
+}
